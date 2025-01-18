@@ -1,0 +1,44 @@
+smart-recipe-generator/
+├── frontend/                 # Frontend Vite application
+│   ├── public/               # Static files (e.g., images, icons)
+│   ├── src/
+│   │   ├── assets/           # Static assets like images or styles
+│   │   ├── components/       # Reusable UI components
+│   │   ├── pages/            # Page components for routing
+│   │   ├── utils/            # Utility functions for the frontend
+│   │   ├── App.jsx           # Main application component
+│   │   ├── main.jsx          # Entry point for Vite
+│   │   └── styles/           # Global or component-specific styles
+│   │       └── global.css    # Global styles
+│   ├── index.html            # HTML entry point
+│   ├── vite.config.js        # Vite configuration file
+│   └── package.json          # Frontend dependencies
+├── backend/                  # Backend Node.js application
+│   ├── config/               # Configuration files (e.g., MongoDB connection)
+│   │   ├── db.js             # MongoDB connection configuration
+│   │   └── env.js            # Environment variables configuration
+│   ├── controllers/          # Controller logic for routes
+│   │   ├── recipeController.js
+│   │   └── userController.js
+│   ├── models/               # Mongoose models
+│   │   ├── Recipe.js         # Recipe model
+│   │   └── User.js           # User model
+│   ├── routes/               # Express routes
+│   │   ├── recipeRoutes.js   # Routes for recipes
+│   │   └── userRoutes.js     # Routes for user actions
+│   ├── middlewares/          # Custom middleware (e.g., authentication)
+│   │   └── authMiddleware.js
+│   ├── utils/                # Utility functions (e.g., nutritional calculations)
+│   │   └── nutritionCalculator.js
+│   ├── server.js             # Main backend entry point
+│   ├── .env                  # Environment variables (e.g., database URL)
+│   ├── .gitignore            # Git ignore file
+│   └── package.json          # Backend dependencies
+├── shared/                   # Shared assets and configuration between frontend and backend
+│   ├── constants/            # Shared constants
+│   │   └── dietaryPreferences.js
+│   └── utils/                # Shared utilities
+│       └── helpers.js
+├── README.md                 # Documentation
+├── .gitignore                # Ignore file for the project
+└── docker-compose.yml        # Docker configuration (optional, for running backend and database)
